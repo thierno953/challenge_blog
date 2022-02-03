@@ -1,39 +1,34 @@
 import React from "react";
 import styled from "styled-components";
-import background from "../assets/background.png";
-import image from "../assets/undraw_Interview_re_e5jn.png";
-import Button from "./Button";
+
+
+import Button from "../Button";
 import { RiGroupLine } from "react-icons/ri";
-export default function Home() {
+export default function HomeInfo({ item }) {
   return (
     <Section id="home">
       <div className="text">
         <h1>
-          <span className="highlight">Earthium</span> is a real-time stratergic
-          game
+          {item.title}
         </h1>
         <p>
-          Where you can earn money, <span className="highlight"> crypto </span>
-          and
-          <span className="highlight"> NFTs </span>
-          by trading land, finding treasures and building businesses. Welcome!
+        
+          {item.description}
         </p>
         <Button text="Join Our Discord" icon={<RiGroupLine />} />
       </div>
       <div className="image">
-        <img src={image} alt="Home" />
+      <img src={item.images} alt={item.title} />
       </div>
     </Section>
   );
 }
 
 const Section = styled.section`
-  background-image: url(${background});
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
+
   display: grid;
   grid-template-columns: 50% 50%;
+  gap: 20px;
   height: 80vh;
   align-items: center;
   .text {
@@ -46,7 +41,7 @@ const Section = styled.section`
       color: var(--primary-color);
     }
     h1 {
-      font-size: 4.8vw;
+      font-size: 4vw;
     }
     p {
       font-size: 1.5vw;

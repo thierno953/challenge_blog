@@ -1,11 +1,12 @@
 import React, { useEffect } from "react";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import Blogs from "./components/Blogs";
 import BuySell from "./components/BuySell";
 import Footer from "./components/Footer";
-import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import scrollreveal from "scrollreveal";
+import Home from "./components/Home/Home";
 
 function App() {
   useEffect(() => {
@@ -40,14 +41,14 @@ function App() {
   }, 1500);
 
   return (
-    <div>
+    <Router>
       <ScrollToTop />
       <Navbar />
-      <Home />
+      <Route exact path="/" component={Home} />
       <BuySell />
       <Blogs />
       <Footer />
-    </div>
+    </Router>
   );
 }
 
