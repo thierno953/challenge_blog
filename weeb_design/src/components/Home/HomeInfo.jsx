@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 import Button from "../Button";
 import { RiGroupLine } from "react-icons/ri";
 export default function HomeInfo({ item }) {
@@ -25,10 +24,8 @@ export default function HomeInfo({ item }) {
 }
 
 const Section = styled.section`
-
   display: grid;
   grid-template-columns: 50% 50%;
-  gap: 20px;
   height: 80vh;
   align-items: center;
   .text {

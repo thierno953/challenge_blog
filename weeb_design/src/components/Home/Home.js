@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-
 import { useAlert } from "react-alert";
 import { useDispatch, useSelector } from "react-redux";
 import { clearErrors, getHeader } from "../../redux/actions/headerAction";

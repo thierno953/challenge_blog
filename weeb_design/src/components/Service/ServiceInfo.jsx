@@ -1,30 +1,21 @@
 import React from "react";
 import styled from "styled-components";
-import BuySell1 from "../assets/undraw_Interview_re_e5jn.png";
-import BuySell2 from "../assets/undraw_On_the_office_re_cxds.png";
 
-export default function BuySell() {
+
+export default function ServiceInfo({ item }) {
   return (
     <Section>
       <div className="row">
-        <div className="col" id="buySell1">
-          <img src={BuySell1} alt="Buy Sell 1" />
-          <div className="text">
+ 
+       <div className="col" id="buySell2">
+       <div className="text">
             <h2>
-              Buy and Sell Virtual <span>Lands</span> and
-              <span> Properties</span>
+            {item.title}
             </h2>
+            <p>  {item.description}</p>
           </div>
+          <img src={item.images} alt={item.title} />
         </div>
-        <div className="col" id="buySell2">
-          <h2>
-            Buy and Sell
-            <span> Virtual Resources </span>
-            and Businesses
-          </h2>
-          <img src={BuySell2} alt="Buy Sell 2" />
-        </div>
-      
       </div>
     </Section>
   );
@@ -44,7 +35,7 @@ const Section = styled.section`
       img {
         max-width: 100%;
         width: 100%;
-        height: 60vh;
+        height: 50vh;
         object-fit: cover;
         align-self: center;
       }

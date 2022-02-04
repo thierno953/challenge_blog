@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import Blogs from "./components/Blogs";
-import BuySell from "./components/BuySell";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
 import scrollreveal from "scrollreveal";
 import Home from "./components/Home/Home";
+import BuySell from "./components/BuySell/BuySell";
+import Blogs from "./components/Blog/Blogs";
+import Service from "./components/Service/Service";
 
 function App() {
   useEffect(() => {
@@ -45,8 +46,9 @@ function App() {
       <ScrollToTop />
       <Navbar />
       <Route exact path="/" component={Home} />
-      <BuySell />
-      <Blogs />
+      <Route exact path="/" component={BuySell} />
+      <Route exact path="/" component={Blogs} />
+      <Route exact path="/" component={Service} />
       <Footer />
     </Router>
   );
