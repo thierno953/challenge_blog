@@ -1,0 +1,34 @@
+.container_detail {
+    max-width: 1300px;
+    margin: auto;
+    min-height: 70vh;
+    padding-top: 80px;
+}
+.container_detail_info {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0px 10px;
+}
+.content_flexis img {
+  max-width: 100%;
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  align-self: center;
+}
+.info {
+    padding-top: 20px;
+}
+.content_flexis p {
+  font-size: 20px;
+  padding-top: 10px;
+}
+@media screen and (max-width: 600px) {
+    .content_flexis h2 {
+        font-size: 18px;
+    }
+    .content_flexis p {
+      font-size: 14px;
+    }
+  }

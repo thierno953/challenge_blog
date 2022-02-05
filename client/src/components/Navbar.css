@@ -1,0 +1,55 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  max-width: 160px;
+  padding: 20px 5px;
+  z-index: 100;
+  border-radius: 5px;
+}
+.list-wrapper li a.link {
+  color: #fff;
+  font-size: 18px;
+  padding: 10px;
+}
+
+.list-wrapper li a.logout {
+  color: #ff4820;
+  font-size: 18px;
+}
+.profile {
+  display: flex;
+}
+.AiFillCaretDown {
+  margin-top: 5px;
+}
+
+.logout_btn {
+  border: none;
+  outline: none;
+  background: #ff4820;
+  padding: 10px;
+  cursor: pointer;
+  text-align: left;
+}
+a.logout {
+  color: #ffffff;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #020202;
+  color: #000000;
+  flex-direction: column;
+}
+.btns {
+  background: #db3009;
+  padding: 6px 15px;
+  border-radius: 7px;
+  cursor: pointer;
+}

@@ -1,0 +1,41 @@
+.form {
+    max-width: 1300px;
+    margin: auto;
+    min-height: 70vh;
+    padding-top: 30px;
+  }
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: auto;
+    max-width: 600px;
+    padding-top: 150px;
+  }
+  form p {
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  form label {
+    margin-bottom: 0.5rem;
+    color: #fff;
+  }
+  
+  form input,
+  textarea {
+    margin-bottom: 1rem;
+    padding: 10px 18px;
+    font-size: 1.2rem;
+    font-family: "Outfit", sans-serif;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+  }
+  form .btn {
+      padding: 10px 22px;
+  }
+  form a {
+      padding-top: 15px;
+  }
